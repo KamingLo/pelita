@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,10 +15,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // 1. Membuat Akun Super Admin
         User::factory()->create([
-        'name' => 'Super Admin',
-        'email' => 'admin@pelita.com',
-        'password' => bcrypt('password'),
-    ]);
+            'name' => 'Super Admin',
+            'email' => 'admin@pelita.com',
+            'password' => bcrypt('password'),
+        ]);
+
+        // 2. Memanggil Seeder Lainnya
+        $this->call([
+            GallerySeeder::class,
+            PostSeeder::class,
+        ]);
     }
 }

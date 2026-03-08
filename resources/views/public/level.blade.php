@@ -12,10 +12,11 @@
         :title="$levelData['title']" 
         :desc="$levelData['desc']" 
     />
-
-    {{-- 3. Keunggulan Kurikulum --}}
-    <x-sections.level.features 
-        :features="$levelData['features']" 
+    
+    {{-- 3. Postingan Terbaru --}}
+    <x-sections.level.posts 
+        :posts="$posts" 
+        :dbCode="$levelData['db_code']" 
     />
 
     {{-- 4. Visi & Misi --}}
@@ -23,9 +24,9 @@
         :visionMission="$levelData['vision_mission']" 
     />
 
-    {{-- 5. Postingan Terbaru --}}
-    <x-sections.level.posts 
-        :posts="$posts" 
-        :dbCode="$levelData['db_code']" 
+    {{-- 5. Keunggulan Kurikulum --}}
+    <x-sections.level.features 
+        :features="$levelData['features']" 
     />
+
 </x-layouts.app>

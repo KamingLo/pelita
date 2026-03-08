@@ -18,6 +18,7 @@ class Navbar extends Component
             'Sekolah Menengah Atas' => '/jenjang/sekolah-menengah-atas',
             'Sekolah Menengah Kejuruan' => '/jenjang/sekolah-menengah-kejuruan',
         ],
+        'Galeri' => '/galeri',
         'Fasilitas' => '/fasilitas',
         'Postingan' => [
             'Berita' => '/berita',

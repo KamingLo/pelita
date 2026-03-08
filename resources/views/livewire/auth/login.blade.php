@@ -4,9 +4,9 @@
             <div class="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl">
                 
                 <div class="mb-10 text-center lg:text-left">
-                    <img class="w-auto h-11 mx-auto lg:mx-0 mb-6" src="{{ asset('image/logo/logo_pelita_project.png') }}" alt="Logo SMK Pelita">
+                    <img class="w-auto h-32 mx-auto  mb-6" src="{{ asset('image/logo/logo_pelita.webp') }}" alt="Logo Sekolah Pelita">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900" x-text="showForgot ? 'Reset Password' : 'Selamat Datang Kembali'"></h2>
-                    <p class="mt-2 text-sm text-gray-500" x-text="showForgot ? 'Masukkan email Anda untuk menerima link reset password.' : 'Silakan masuk untuk mengelola Dashboard SMK Pelita'"></p>
+                    <p class="mt-2 text-sm text-gray-500" x-text="showForgot ? 'Masukkan email Anda untuk menerima link reset password.' : 'Silakan masuk untuk mengelola Dashboard Sekolah Pelita'"></p>
                 </div>
 
                 @if (session()->has('success'))
@@ -88,13 +88,13 @@
             </div>
 
             <p class="mt-10 text-center text-xs text-gray-400 font-medium uppercase tracking-widest">
-                &copy; {{ date('Y') }} SMK PELITA IV JAKARTA
+                &copy; {{ date('Y') }} Sekolah Pelita - All rights reserved.
             </p>
         </div>
     </div>
 
     <div class="relative flex-1 hidden w-0 lg:block">
-        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('image/assets/mp.jpg') }}" alt="SMK Pelita School">
+        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('image/assets/students/student-smiling.png') }}" alt="Pelita School">
         <div class="absolute inset-0 bg-blue-700 mix-blend-multiply opacity-30"></div>
         <div class="absolute inset-0 bg-gradient-to-tr from-blue-900 via-transparent to-transparent opacity-80"></div>
         <div class="absolute bottom-16 left-16 right-16">

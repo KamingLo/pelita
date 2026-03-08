@@ -7,6 +7,7 @@
     <meta name="description" content="{{$description ?? 'Pelita IV'}}">
     <meta name="keywords" content="sekolah, jakarta barat, terpercaya, internasional">
     <meta name="author" content="Pelita IV">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
