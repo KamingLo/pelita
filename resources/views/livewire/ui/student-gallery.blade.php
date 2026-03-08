@@ -3,6 +3,20 @@
     selectedItem: { title: '', desc: '', img: '' },
     items: @js($memories)
 }" class="w-full py-20 bg-white font-sans">
+    
+    <div class="max-w-7xl mx-auto px-6 mb-16" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-2xl">
+                <p class="text-blue-600 font-bold text-[10px] uppercase mb-4">Student Life</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+                    Galeri Kenangan
+                </h2>
+                <p class="text-slate-500 text-lg">
+                    Setiap momen berharga di sekolah yang menjadi cerita indah untuk masa depan para siswa.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <div class="max-w-7xl mx-auto px-6">
         <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
@@ -13,9 +27,13 @@
                 >
                     <img :src="item.img" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" :alt="item.title">
                     
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-90"></div>
+                    
+                    <div class="absolute inset-0 flex flex-col justify-end p-8">
                         <h4 class="text-white font-bold text-xl mb-2" x-text="item.title"></h4>
                         <p class="text-white/80 text-sm line-clamp-2" x-text="item.desc"></p>
+                        
+                        <div class="h-1 w-0 group-hover:w-12 bg-blue-500 transition-all duration-500 rounded-full mt-4"></div>
                     </div>
                 </div>
             </template>
